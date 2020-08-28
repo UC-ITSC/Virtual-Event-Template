@@ -3,7 +3,7 @@ import { useRouteData } from 'react-static';
 import { Link } from '@reach/router';
 import { Post } from 'types';
 
-export default () => {
+const Blog: React.FC = () => {
   const { posts }: { posts: Post[] } = useRouteData();
 
   return (
@@ -20,3 +20,5 @@ export default () => {
     </div>
   );
 };
+
+export default Blog;

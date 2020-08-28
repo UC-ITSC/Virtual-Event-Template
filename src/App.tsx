@@ -8,7 +8,7 @@ import './app.scss';
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes([ `dynamic` ]);
 
-const App : React.FunctionComponent = () =>
+const App : React.FC = () =>
   <Root>
     <nav>
       <Link to="/">Home</Link>
