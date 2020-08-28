@@ -116,4 +116,5 @@ Through all of these tasks, ensure the site you are building is accessible to pe
 * React
   * [Intro to React](https://reactjs.org/tutorial/tutorial.html)
   * [Main Concepts](https://reactjs.org/docs/hello-world.html)
+  * [React + TypeScript](https://github.com/sw-yx/react-typescript-cheatsheet)
   * Video: [React Tutorial for Beginners](https://www.youtube.com/watch?v=dGcsHMXbSOA)
