@@ -118,3 +118,15 @@ Through all of these tasks, ensure the site you are building is accessible to pe
   * [Main Concepts](https://reactjs.org/docs/hello-world.html)
   * [React + TypeScript](https://github.com/sw-yx/react-typescript-cheatsheet)
   * Video: [React Tutorial for Beginners](https://www.youtube.com/watch?v=dGcsHMXbSOA)
+* React-Static
+  * [React-Static getting started guide](https://github.com/react-static/react-static/tree/master/docs)
+  * [React-Static Architecture Discussion](https://medium.com/@tannerlinsley/%EF%B8%8F-introducing-react-static-a-progressive-static-site-framework-for-react-3470d2a51ebc)
+  * Video: [Introduction to React-Static](https://www.youtube.com/watch?v=OqbJ5swVpDQ)
+* Git
+  * [Using git with VS Code](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support)
+  * [Using git with Github Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop)
+* Recommended VS Code Extensions
+  * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+  * [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
