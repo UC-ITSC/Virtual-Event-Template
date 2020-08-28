@@ -16,8 +16,7 @@ if (typeof document !== `undefined`) {
     ReactDOM.hydrate :
     ReactDOM.render;
 
-  // eslint-disable-next-line id-blacklist
-  const render = (Comp: Function) => {
+  const render = (Comp: React.FunctionComponent) => {
     renderMethod(
       <AppContainer>
         <Comp />
