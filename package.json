@@ -11,8 +11,8 @@
     "predeploy": "npm run build",
     "deploy": "netlify deploy --dir dist --message \"$(git show -s --format='%h %s')\"",
     "deploy:prod": "npm run deploy -- --prod",
-    "lint": "eslint src --ext .js,.ts,.jsx,.tsx",
-    "lint:fix": "eslint src --ext .js,.ts,.jsx,.tsx --fix",
+    "lint": "eslint src static.config.js --ext .js,.ts,.jsx,.tsx",
+    "lint:fix": "eslint src static.config.js --ext .js,.ts,.jsx,.tsx --fix",
     "stylelint": "stylelint \"src/**/*.{css,scss}\""
   },
   "dependencies": {
