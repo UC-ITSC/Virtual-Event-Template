@@ -81,7 +81,7 @@ Through all of these tasks, ensure the site you are building is accessible to pe
     * This is something you should keep constantly up-to-date. It is how we will track your progress, and it will facilitate code review and collaboration with your internship peers
         * Resources:
             * [Copying a Project Board](https://docs.github.com/en/github/managing-your-work-on-github/copying-a-project-board)
-3. Add the Provided Issues to your Project Board
+3. Add the [Provided Issues](docs/issues.md) to your Project Board
     * Resources:
         * [Creating an Issue](https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue)
         * [Adding Issues to a Project Board](https://docs.github.com/en/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar)
@@ -93,6 +93,7 @@ Through all of these tasks, ensure the site you are building is accessible to pe
     * Try searching for “Free React Templates” or use one of these [35 Free React Templates](https://dev.to/davidepacilio/35-free-react-templates-and-themes-32ci)
 3. Create the event home page including:
    * An embedded YouTube live stream
+   * A schedule of events
 4. Create a page for each project type (DevOps, OCAT, VEaaS, etc) to list the projects for each one
    * This can be one template page that receives JSON data to populate the title and projects, but doesn’t have to be
 5. Create a template page to display each project
@@ -109,7 +110,7 @@ Through all of these tasks, ensure the site you are building is accessible to pe
    * Recommend using [Disqus](https://disqus.com/)
    * There is a React wrapper for Disqus that makes it very easy to implement called [Disqus-React](https://www.npmjs.com/package/disqus-react)
 2. Add a countdown timer to the home page and prevent users from accessing the project pages until the countdown is complete
-3. Change the embed on the home page depending on the countdown
+3. Change the embedded video/stream on the home page to show a static video before the countdown and the live stream after the countdown
 
 ## Resources
 
