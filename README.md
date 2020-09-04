@@ -2,7 +2,7 @@
 
 ## Application Purpose and Context
 
-Due to COVID*19, a lot of organizations have been forced to cancel their in*person events and conferences. We have developed a platform to allow these organizations to take their events virtual, with embedded videos, live streams, and discussion boards.
+Due to COVID-19, a lot of organizations have been forced to cancel their in*person events and conferences. We have developed a platform to allow these organizations to take their events virtual, with embedded videos, live streams, and discussion boards.
 
 Your goal will be to create a mini virtual IT expo to showcase your fellow interns’ projects. This site will include embedded videos, information about each “presenter”, and live stream main stage, and a live chat section for each “presenter”
 
