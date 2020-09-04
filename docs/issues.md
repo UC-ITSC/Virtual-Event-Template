@@ -55,3 +55,25 @@
     ```md
     - [ ] Prepare your presentation
     ```
+
+7. Integrate live chat
+
+    ```md
+    * Recommend using [Disqus](https://disqus.com/)
+    * There is a React wrapper for Disqus that makes it very easy to implement called [Disqus-React](https://www.npmjs.com/package/disqus-react)
+    - [ ] Add a live discussion to each project page that is separate from the other project pages (i.e. commenting on one project only shows on the one project)
+    - [ ] Ensure that new comments show up without refreshing the page
+    ```
+
+8. Implement an event countdown
+
+    ```md
+    - [ ] Create a countdown timer on the home page that counts down to the start of the event
+    - [ ] Use that timer to prevent users from accessing the project pages until the countdown is complete
+    ```
+
+9. Add a pre-event video
+
+    ```md
+    - [ ] Use the countdown timer to change the live stream to a static video until the the event starts
+    ```
