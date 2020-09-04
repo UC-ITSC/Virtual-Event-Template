@@ -69,7 +69,7 @@ This is a static website and only relies on the built front*end code and the Net
 
 ## Tasks
 
-Through all of these tasks, ensure the site you are building is accessible to persons with disabilities ([UC Accessibility Policy](https://www.uc.edu/about/accessibility*network/getting*started/policy.html))
+Through all of these tasks, ensure the site you are building is accessible to persons with disabilities ([UC Accessibility Policy](https://www.uc.edu/about/accessibility-network/getting-started/policy.html))
 
 ### Setup
 
