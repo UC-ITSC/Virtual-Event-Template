@@ -2,7 +2,7 @@
 
 ## Application Purpose and Context
 
-Due to COVID-19, a lot of organizations have been forced to cancel their in*person events and conferences. We have developed a platform to allow these organizations to take their events virtual, with embedded videos, live streams, and discussion boards.
+Due to COVID-19, a lot of organizations have been forced to cancel their in-person events and conferences. We have developed a platform to allow these organizations to take their events virtual, with embedded videos, live streams, and discussion boards.
 
 Your goal will be to create a mini virtual IT expo to showcase your fellow interns’ projects. This site will include embedded videos, information about each “presenter”, and live stream main stage, and a live chat section for each “presenter”
 
@@ -27,7 +27,7 @@ Every issue should be code reviewed by another internship peer
 
 1. Making a Pull Request
    1. Create a Pull Request (PR) from your development branch (your current branch) into master (the main branch)
-        * [Creating a Pull Request](https://docs.github.com/en/github/collaborating*with*issues*and*pull*requests/creating*a*pull*request)
+        * [Creating a Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
    2. Reach out to one of your fellow interns and ask them nicely to review your code. Include a link to the Pull Request you'd like them to review
    3. Take any suggestions with a grain of salt. Remember, this is YOUR application. Make any changes you agree with and then merge the Pull Request
 2. Reviewing a Pull Request (PR)
@@ -38,7 +38,7 @@ Every issue should be code reviewed by another internship peer
        * Balance criticism with praise.  It is tempting to only point out the negatives.  If you see something you like, tell them!
        * Feel free to ask questions.  In the end, this is a learning process.  Feel free to ask questions if you don't understand something in the code.
 3. After a Pull Request (PR) has been approved, merge it and move on
-   * [Merging a Pull Request](https://docs.github.com/en/github/collaborating*with*issues*and*pull*requests/merging*a*pull*request)
+   * [Merging a Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request)
    * Once merged, create a new branch from master and start on your next issue
 
 ## Technologies Used
@@ -55,7 +55,7 @@ Every issue should be code reviewed by another internship peer
 
 ## System Architecture
 
-This is a static website and only relies on the built front*end code and the Netlify CDN that delivers the static assets.
+This is a static website and only relies on the built front-end code and the Netlify CDN that delivers the static assets.
 
 ## Use Cases and Examples
 
