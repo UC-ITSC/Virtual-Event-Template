@@ -85,6 +85,18 @@ Through all of these tasks, ensure the site you are building is accessible to pe
     * Resources:
         * [Creating an Issue](https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue)
         * [Adding Issues to a Project Board](https://docs.github.com/en/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar)
+4. Install NodeJS 12.18.x on your computer
+      * Please install the version marked LTS not the version marked Current
+      * [NodeJS.org](https://nodejs.org/en/)
+5. Install [VS Code](https://code.visualstudio.com/) your computer
+6. Clone the project from GitHub
+      * See the resources belong on using Git
+7. Install the project
+      * In VS Code, open a terminal window from the top (if one is not already open)
+      * Run the command `npm install`
+8. Start the project
+      * In VS Code, open a terminal window from the top (if one is not already open)
+      * Run the command `npm start`
 
 ### Milestone 1
 
