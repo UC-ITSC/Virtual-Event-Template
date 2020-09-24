@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About: React.FC = () =>
+const About = () =>
   <div>
     <p>React Static is a progressive static site generator for React.</p>
   </div>;

@@ -1,10 +1,9 @@
 import React from 'react';
 import { useRouteData } from 'react-static';
 import { Link } from '@reach/router';
-import { Post } from 'types';
 
-const PostComponent: React.FC = () => {
-  const { post }: { post: Post } = useRouteData();
+const PostComponent = () => {
+  const { post } = useRouteData();
   return (
     <div>
       <Link to="/blog/">{`<`} Back</Link>
