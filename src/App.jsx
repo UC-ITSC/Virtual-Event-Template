@@ -48,7 +48,6 @@ const App = () =>
             transition={pageTransition}>
             <Router>
               <Routes path="*" />
-              <Redirect from="/" to="/example-pages/LandingPage" />
             </Router>
           </motion.div>
         </PresentationLayout>
