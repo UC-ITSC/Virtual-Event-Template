@@ -2,7 +2,6 @@ import React from 'react';
 import { addPrefetchExcludes, Root, Routes } from 'react-static';
 import { Link, Router } from '@reach/router';
 import FancyDiv from 'components/FancyDiv';
-import Dynamic from 'containers/Dynamic';
 import './app.scss';
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
@@ -20,7 +19,6 @@ const App = () =>
       <FancyDiv>
         <React.Suspense fallback={<em>Loading...</em>}>
           <Router>
-            <Dynamic path="dynamic" />
             <Routes path="*" />
           </Router>
         </React.Suspense>
