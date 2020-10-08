@@ -1,29 +1,59 @@
 import React from 'react';
-import { addPrefetchExcludes, Root, Routes } from 'react-static';
-import { Link, Router } from '@reach/router';
-import FancyDiv from 'components/FancyDiv';
+import { Root, Routes } from 'react-static';
+import { Redirect, Router } from '@reach/router';
+import { AnimatePresence, motion } from 'framer-motion';
+import { PresentationLayout } from './components/layout-blueprints';
+import './plugins/fontawesome';
+import './assets/base.scss';
 import './app.scss';
 
-// Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes([ `dynamic` ]);
+const pageVariants = {
+  in: {
+    opacity: 1,
+    scale: 1,
+  },
+  initial: {
+    opacity: 0,
+    scale: 0.99,
+  },
+  out: {
+    opacity: 0,
+    scale: 1.01,
+  },
+};
+
+const pageTransition = {
+  duration: 0.4,
+  ease: `anticipate`,
+  type: `tween`,
+};
 
 const App = () =>
   <Root>
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/blog">Blog</Link>
-      <Link to="/dynamic">Dynamic</Link>
-    </nav>
-    <div className="content">
-      <FancyDiv>
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
-      </FancyDiv>
-    </div>
+    <AnimatePresence>
+      <React.Suspense fallback={
+        // eslint-disable-next-line max-len
+        <div className="d-flex align-items-center vh-100 justify-content-center text-center font-weight-bold font-size-lg py-3">
+          <div className="w-50 mx-auto">
+              Please wait while we load the website
+          </div>
+        </div>
+      }>
+        <PresentationLayout>
+          <motion.div
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={pageVariants}
+            transition={pageTransition}>
+            <Router>
+              <Routes path="*" />
+              <Redirect from="/" to="/example-pages/LandingPage" />
+            </Router>
+          </motion.div>
+        </PresentationLayout>
+      </React.Suspense>
+    </AnimatePresence>
   </Root>;
 
 export default App;
