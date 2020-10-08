@@ -31,6 +31,7 @@
   }
 
   // Disabled comes first so active can properly restyle
+
   &.disabled,
   &:disabled {
     opacity: $btn-disabled-opacity;
@@ -48,11 +49,11 @@
 }
 
 // Future-proof disabling of clicks on `<a>` elements
+
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
 }
-
 
 //
 // Alternate buttons
@@ -70,12 +71,12 @@ fieldset:disabled a.btn {
   }
 }
 
-
 //
 // Link buttons
 //
 
 // Make a button look and behave like a link
+
 .btn-link {
   font-weight: $font-weight-normal;
   color: $link-color;
@@ -101,7 +102,6 @@ fieldset:disabled a.btn {
   // No need for an active state here
 }
 
-
 //
 // Button Sizes
 //
@@ -114,7 +114,6 @@ fieldset:disabled a.btn {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
 
-
 //
 // Block button
 //
@@ -124,15 +123,17 @@ fieldset:disabled a.btn {
   width: 100%;
 
   // Vertically space out multiple block buttons
+
   + .btn-block {
     margin-top: $btn-block-spacing-y;
   }
 }
 
 // Specificity overrides
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+
+input[ type="submit" ],
+input[ type="reset" ],
+input[ type="button" ] {
   &.btn-block {
     width: 100%;
   }

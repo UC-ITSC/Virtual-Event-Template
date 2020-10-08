@@ -98,7 +98,6 @@
   }
 }
 
-
 //
 // Header navs
 //
@@ -116,6 +115,7 @@
 }
 
 // Card image
+
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -142,7 +142,6 @@
   @include border-bottom-radius($card-inner-border-radius);
 }
 
-
 // Card deck
 
 .card-deck {
@@ -166,7 +165,6 @@
   }
 }
 
-
 //
 // Card groups
 //
@@ -174,6 +172,7 @@
 .card-group {
   // The child selector allows nested `.card` within `.card-group`
   // to display properly.
+
   > .card {
     margin-bottom: $card-group-margin;
   }
@@ -183,6 +182,7 @@
     flex-flow: row wrap;
     // The child selector allows nested `.card` within `.card-group`
     // to display properly.
+
     > .card {
       // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
       flex: 1 0 0%;
@@ -203,6 +203,7 @@
             // stylelint-disable-next-line property-blacklist
             border-top-right-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
@@ -218,6 +219,7 @@
             // stylelint-disable-next-line property-blacklist
             border-top-left-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
@@ -228,7 +230,6 @@
     }
   }
 }
-
 
 //
 // Columns
@@ -251,7 +252,6 @@
     }
   }
 }
-
 
 //
 // Accordion

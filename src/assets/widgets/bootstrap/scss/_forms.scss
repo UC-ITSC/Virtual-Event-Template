@@ -25,12 +25,14 @@
   @include transition($input-transition);
 
   // Unstyle the caret on `<select>`s in IE10+.
+
   &::-ms-expand {
     background-color: transparent;
     border: 0;
   }
 
   // Remove select outline from select box in FF
+
   &:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 $input-color;
@@ -40,6 +42,7 @@
   @include form-control-focus($ignore-warning: true);
 
   // Placeholder
+
   &::placeholder {
     color: $input-placeholder-color;
     // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
@@ -51,8 +54,9 @@
   // HTML5 says that controls under a fieldset > legend:first-child won't be
   // disabled if the fieldset is disabled. Due to implementation difficulty, we
   // don't honor that edge case; we style them as disabled anyway.
+
   &:disabled,
-  &[readonly] {
+  &[ readonly ] {
     background-color: $input-disabled-bg;
     // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
     opacity: 1;
@@ -72,12 +76,12 @@ select.form-control {
 }
 
 // Make file inputs better match text inputs by forcing them to new lines.
+
 .form-control-file,
 .form-control-range {
   display: block;
   width: 100%;
 }
-
 
 //
 // Labels
@@ -85,6 +89,7 @@ select.form-control {
 
 // For use with horizontal and inline forms, when you need the label (or legend)
 // text to align with the form controls.
+
 .col-form-label {
   padding-top: add($input-padding-y, $input-border-width);
   padding-bottom: add($input-padding-y, $input-border-width);
@@ -106,7 +111,6 @@ select.form-control {
   @include font-size($input-font-size-sm);
   line-height: $input-line-height-sm;
 }
-
 
 // Readonly controls as plain text
 //
@@ -132,7 +136,6 @@ select.form-control {
   }
 }
 
-
 // Form control sizing
 //
 // Build on `.form-control` with modifier classes to decrease or increase the
@@ -157,9 +160,10 @@ select.form-control {
 }
 
 // stylelint-disable-next-line no-duplicate-selectors
+
 select.form-control {
-  &[size],
-  &[multiple] {
+  &[ size ],
+  &[ multiple ] {
     height: auto;
   }
 }
@@ -182,7 +186,6 @@ textarea.form-control {
   margin-top: $form-text-margin-top;
 }
 
-
 // Form grid
 //
 // Special replacement for our grid system's `.row` for tighter form layouts.
@@ -194,12 +197,11 @@ textarea.form-control {
   margin-left: -$form-grid-gutter-width / 2;
 
   > .col,
-  > [class*="col-"] {
+  > [ class*="col-" ] {
     padding-right: $form-grid-gutter-width / 2;
     padding-left: $form-grid-gutter-width / 2;
   }
 }
-
 
 // Checkboxes and radios
 //
@@ -218,7 +220,8 @@ textarea.form-control {
 
   // Use disabled attribute instead of :disabled pseudo-class
   // Workaround for: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11295231
-  &[disabled] ~ .form-check-label {
+
+  &[ disabled ] ~ .form-check-label {
     color: $text-muted;
   }
 }
@@ -234,6 +237,7 @@ textarea.form-control {
   margin-right: $form-check-inline-margin-x;
 
   // Undo .form-check-input defaults and add some `margin-right`.
+
   .form-check-input {
     position: static;
     margin-top: 0;
@@ -241,7 +245,6 @@ textarea.form-control {
     margin-left: 0;
   }
 }
-
 
 // Form validation
 //
@@ -271,6 +274,7 @@ textarea.form-control {
   // Because we use flex, the initial sizing of checkboxes is collapsed and
   // doesn't occupy the full-width (which is what we want for xs grid tier),
   // so we force that here.
+
   .form-check {
     width: 100%;
   }
@@ -285,6 +289,7 @@ textarea.form-control {
     }
 
     // Inline-block all the things for "inline"
+
     .form-group {
       display: flex;
       flex: 0 0 auto;
@@ -294,6 +299,7 @@ textarea.form-control {
     }
 
     // Allow folks to *not* use `.form-group`
+
     .form-control {
       display: inline-block;
       width: auto; // Prevent labels from stacking above inputs in `.form-group`
@@ -301,6 +307,7 @@ textarea.form-control {
     }
 
     // Make static controls behave like regular ones
+
     .form-control-plaintext {
       display: inline-block;
     }
@@ -312,6 +319,7 @@ textarea.form-control {
 
     // Remove default margin on radios/checkboxes that were used for stacking, and
     // then undo the floating of radios and checkboxes to match.
+
     .form-check {
       display: flex;
       align-items: center;
@@ -319,6 +327,7 @@ textarea.form-control {
       width: auto;
       padding-left: 0;
     }
+
     .form-check-input {
       position: relative;
       flex-shrink: 0;
@@ -331,6 +340,7 @@ textarea.form-control {
       align-items: center;
       justify-content: center;
     }
+
     .custom-control-label {
       margin-bottom: 0;
     }

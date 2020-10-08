@@ -27,16 +27,19 @@
 }
 
 /* Prevents IE11 from highlighting tiles in blue */
+
 .leaflet-tile::selection {
   background: transparent;
 }
 
 /* Safari renders non-retina tile on retina better with this, but Chrome is worse */
+
 .leaflet-safari .leaflet-tile {
   image-rendering: -webkit-optimize-contrast;
 }
 
 /* hack that prevents hw layers "stretching" when loading new tiles */
+
 .leaflet-safari .leaflet-tile-container {
   width: 1600px;
   height: 1600px;
@@ -50,6 +53,7 @@
 
 /* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */
 /* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */
+
 .leaflet-container .leaflet-overlay-pane svg,
 .leaflet-container .leaflet-marker-pane img,
 .leaflet-container .leaflet-shadow-pane img,
@@ -103,6 +107,7 @@
 }
 
 /* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
+
 .leaflet-overlay-pane svg {
   -moz-user-select: none;
 }
@@ -290,6 +295,7 @@
 }
 
 /* marker & overlays interactivity */
+
 .leaflet-marker-icon,
 .leaflet-marker-shadow,
 .leaflet-image-layer,
@@ -314,7 +320,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .leaflet-container a {
-  color: #0078A8;
+  color: #0078a8;
 }
 
 .leaflet-container a.leaflet-active {
@@ -328,6 +334,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 
 /* general typography */
+
 .leaflet-container {
   font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
@@ -405,7 +412,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   text-indent: 1px;
 }
 
-.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
+.leaflet-touch .leaflet-control-zoom-in,
+.leaflet-touch .leaflet-control-zoom-out {
   font-size: 22px;
 }
 
@@ -515,7 +523,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
   overflow: hidden;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
   background: $white;
   background: transparentize($white, 0.5);
 }
@@ -580,9 +587,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   width: 17px;
   height: 17px;
   padding: 1px;
-
   margin: -10px auto 0;
-
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -628,7 +633,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-oldie .leaflet-popup-tip {
   width: 24px;
   margin: 0 auto;
-
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
 }
@@ -655,6 +659,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* Tooltip */
 /* Base styles for the element that has a tooltip */
+
 .leaflet-tooltip {
   position: absolute;
   padding: 6px;

@@ -20,12 +20,14 @@
     // Avoid using mixin so we can pass custom focus shadow properly
     @if $enable-shadows and $btn-active-box-shadow != none {
       box-shadow: 0 0 0 0 rgba(0,0,0,0);
-    } @else {
+    }
+    @else {
       box-shadow: 0 0 0 0 rgba(0,0,0,0);
     }
   }
 
   // Disabled comes first so active can properly restyle
+
   &.disabled,
   &:disabled {
     color: color-yiq($background);
@@ -51,7 +53,8 @@
       // Avoid using mixin so we can pass custom focus shadow properly
       @if $enable-shadows and $btn-active-box-shadow != none {
         box-shadow: 0 0 0 0 rgba(0,0,0,0);
-      } @else {
+      }
+      @else {
         box-shadow: 0 0 0 0 rgba(0,0,0,0);
       }
     }
@@ -90,7 +93,8 @@
       // Avoid using mixin so we can pass custom focus shadow properly
       @if $enable-shadows and $btn-active-box-shadow != none {
         box-shadow: 0 0 0 0 rgba(0,0,0,0);
-      } @else {
+      }
+      @else {
         box-shadow: 0 0 0 0 rgba(0,0,0,0);
       }
     }

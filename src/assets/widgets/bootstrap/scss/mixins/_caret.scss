@@ -27,26 +27,28 @@
 
 @mixin caret($direction: down) {
   @if $enable-caret {
-    &::after {
+    &:after {
       display: inline-block;
       margin-left: $caret-spacing;
       vertical-align: $caret-vertical-align;
       content: "";
       @if $direction == down {
         @include caret-down();
-      } @else if $direction == up {
+      }
+      @else if $direction == up {
         @include caret-up();
-      } @else if $direction == right {
+      }
+      @else if $direction == right {
         @include caret-right();
       }
     }
 
     @if $direction == left {
-      &::after {
+      &:after {
         display: none;
       }
 
-      &::before {
+      &:before {
         display: inline-block;
         margin-right: $caret-spacing;
         vertical-align: $caret-vertical-align;
@@ -55,7 +57,7 @@
       }
     }
 
-    &:empty::after {
+    &:empty:after {
       margin-left: 0;
     }
   }

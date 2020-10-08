@@ -3,7 +3,6 @@
 // .modal-dialog    - positioning shell for the actual modal
 // .modal-content   - actual modal w/ bg and corners and stuff
 
-
 .modal-open {
   // Kill the scroll on the body
   overflow: hidden;
@@ -15,6 +14,7 @@
 }
 
 // Container that the modal scrolls within
+
 .modal {
   position: fixed;
   top: 0;
@@ -33,6 +33,7 @@
 }
 
 // Shell div to position the modal with bottom padding
+
 .modal-dialog {
   position: relative;
   width: auto;
@@ -41,15 +42,18 @@
   pointer-events: none;
 
   // When fading in the modal, animate it to slide down
+
   .modal.fade & {
     @include transition($modal-transition);
     transform: $modal-fade-transform;
   }
+
   .modal.show & {
     transform: $modal-show-transform;
   }
 
   // When trying to close, animate focus to scale
+
   .modal.modal-static & {
     transform: $modal-scale-transform;
   }
@@ -80,13 +84,15 @@
   min-height: subtract(100%, $modal-dialog-margin * 2);
 
   // Ensure `modal-dialog-centered` extends the full height of the view (IE10/11)
-  &::before {
+
+  &:before {
     display: block; // IE10
     height: subtract(100vh, $modal-dialog-margin * 2);
     content: "";
   }
 
   // Ensure `.modal-body` shows scrollbar (IE10/11)
+
   &.modal-dialog-scrollable {
     flex-direction: column;
     justify-content: center;
@@ -96,13 +102,14 @@
       max-height: none;
     }
 
-    &::before {
+    &:before {
       content: none;
     }
   }
 }
 
 // Actual modal
+
 .modal-content {
   position: relative;
   display: flex;
@@ -121,6 +128,7 @@
 }
 
 // Modal background
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -131,12 +139,15 @@
   background-color: $modal-backdrop-bg;
 
   // Fade for backdrop
+
   &.fade { opacity: 0; }
+
   &.show { opacity: $modal-backdrop-opacity; }
 }
 
 // Modal header
 // Top section of the modal w/ title and dismiss
+
 .modal-header {
   display: flex;
   align-items: flex-start; // so the close btn always stays on the upper right corner
@@ -153,6 +164,7 @@
 }
 
 // Title text within header
+
 .modal-title {
   margin-bottom: 0;
   line-height: $modal-title-line-height;
@@ -160,6 +172,7 @@
 
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
+
 .modal-body {
   position: relative;
   // Enable `flex-grow: 1` so that the body take up as much space as possible
@@ -169,6 +182,7 @@
 }
 
 // Footer (for actions)
+
 .modal-footer {
   display: flex;
   flex-wrap: wrap;
@@ -182,12 +196,14 @@
   // This solution is far from ideal because of the universal selector usage,
   // but is needed to fix https://github.com/twbs/bootstrap/issues/24800
   // stylelint-disable-next-line selector-max-universal
+
   > * {
     margin: $modal-footer-margin-between / 2;
   }
 }
 
 // Measure scrollbar width for padding body during modal show/hide
+
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -199,6 +215,7 @@
 // Scale up the modal
 @include media-breakpoint-up(sm) {
   // Automatically set modal's width for larger viewports
+
   .modal-dialog {
     max-width: $modal-md;
     margin: $modal-dialog-margin-y-sm-up auto;
@@ -215,7 +232,7 @@
   .modal-dialog-centered {
     min-height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
 
-    &::before {
+    &:before {
       height: subtract(100vh, $modal-dialog-margin-y-sm-up * 2);
     }
   }

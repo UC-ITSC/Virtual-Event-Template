@@ -144,6 +144,7 @@ $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
       @if $rfs-class == "disable" {
         // Adding an extra class increases specificity,
         // which prevents the media query to override the font size
+
         &,
         .disable-responsive-font-size &,
         &.disable-responsive-font-size {

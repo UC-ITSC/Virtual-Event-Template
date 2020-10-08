@@ -1,7 +1,7 @@
 //  Core
 
 .btn {
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   @include border-radius($border-radius-xs);
 
   &:not(:disabled):hover {
@@ -29,14 +29,15 @@
 
 .btn-default {
   @include button-variant($primary, $primary);
-  box-shadow: 0 0.25rem 0.55rem rgba($primary, .35);
+  box-shadow: 0 0.25rem 0.55rem rgba($primary, 0.35);
 
   &:not(:disabled):active,
   &:not(:disabled):focus,
   &:not(:disabled):hover {
-    box-shadow: 0 0.22rem 0.525rem rgba($primary, .4), 0 0.0625rem 0.385rem rgba($primary, .54);
+    box-shadow: 0 0.22rem 0.525rem rgba($primary, 0.4), 0 0.0625rem 0.385rem rgba($primary, 0.54);
   }
 }
+
 .btn:hover {
   .btn-icon-transition {
     transform: scale(1.1);
@@ -45,12 +46,12 @@
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    box-shadow: 0 0.25rem 0.55rem rgba($value, .35);
+    box-shadow: 0 0.25rem 0.55rem rgba($value, 0.35);
 
     &:not(:disabled):active,
     &:not(:disabled):focus,
     &:not(:disabled):hover {
-      box-shadow: 0 0.22rem 0.525rem rgba($value, .4), 0 0.0625rem 0.385rem rgba($value, .54);
+      box-shadow: 0 0.22rem 0.525rem rgba($value, 0.4), 0 0.0625rem 0.385rem rgba($value, 0.54);
     }
 
     &:focus,
@@ -67,7 +68,7 @@
 
 @each $color, $value in $theme-colors {
   .btn-neutral-#{$color} {
-    background: transparentize($value, .85);
+    background: transparentize($value, 0.85);
     color: $value;
     border-color: transparent;
 
@@ -92,22 +93,21 @@
 
 @each $color, $value in $brand-colors {
   .btn-#{$color} {
-    box-shadow: 0 0.25rem 0.55rem rgba($value, .35);
+    box-shadow: 0 0.25rem 0.55rem rgba($value, 0.35);
     @include button-variant($value, $value);
 
     &:not(:disabled):active,
     &:not(:disabled):focus,
     &:not(:disabled):hover {
-      box-shadow: 0 0.22rem 0.525rem rgba($value, .4), 0 0.0625rem 0.385rem rgba($value, .54);
+      box-shadow: 0 0.22rem 0.525rem rgba($value, 0.4), 0 0.0625rem 0.385rem rgba($value, 0.54);
     }
   }
 }
 
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
-
     &:not(:disabled):hover {
-      box-shadow: 0 0.22rem 0.525rem rgba($value, .4), 0 0.0625rem 0.385rem rgba($value, .54);
+      box-shadow: 0 0.22rem 0.525rem rgba($value, 0.4), 0 0.0625rem 0.385rem rgba($value, 0.54);
     }
   }
 }
@@ -119,7 +119,7 @@
 
 .btn-secondary {
   border-color: $secondary;
-  box-shadow: 0 0.25rem 0.55rem rgba($gray-700, .55);
+  box-shadow: 0 0.25rem 0.55rem rgba($gray-700, 0.55);
   color: $primary;
 
   &:not(:disabled):active,
@@ -127,7 +127,7 @@
   &:not(:disabled):hover {
     border-color: $secondary;
     color: darken($link-hover-color, 25%);
-    box-shadow: 0 0.22rem 0.525rem rgba($gray-700, .4), 0 0.0625rem 0.385rem rgba($gray-700, .54);
+    box-shadow: 0 0.22rem 0.525rem rgba($gray-700, 0.4), 0 0.0625rem 0.385rem rgba($gray-700, 0.54);
   }
 
   &:not(:disabled):active {
@@ -164,7 +164,6 @@
 
 @each $color, $value in $theme-colors {
   .btn-link-#{$color} {
-
     span {
       color: $value;
 

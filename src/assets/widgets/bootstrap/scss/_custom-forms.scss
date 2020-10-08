@@ -2,7 +2,6 @@
 // Released under MIT and copyright 2014 Waybury.
 // https://useiconic.com/open
 
-
 // Checkboxes and radios
 //
 // Base class takes care of all the key behavioral aspects.
@@ -27,27 +26,28 @@
   height: ($font-size-base * $line-height-base + $custom-control-indicator-size) / 2;
   opacity: 0;
 
-  &:checked ~ .custom-control-label::before {
+  &:checked ~ .custom-control-label:before {
     color: $custom-control-indicator-checked-color;
     border-color: $custom-control-indicator-checked-border-color;
     @include gradient-bg($custom-control-indicator-checked-bg);
     @include box-shadow($custom-control-indicator-checked-box-shadow);
   }
 
-  &:focus ~ .custom-control-label::before {
+  &:focus ~ .custom-control-label:before {
     // the mixin is not used here to make sure there is feedback
     @if $enable-shadows {
       box-shadow: $input-box-shadow, $input-focus-box-shadow;
-    } @else {
+    }
+    @else {
       box-shadow: $custom-control-indicator-focus-box-shadow;
     }
   }
 
-  &:focus:not(:checked) ~ .custom-control-label::before {
+  &:focus:not(:checked) ~ .custom-control-label:before {
     border-color: $custom-control-indicator-focus-border-color;
   }
 
-  &:not(:disabled):active ~ .custom-control-label::before {
+  &:not(:disabled):active ~ .custom-control-label:before {
     color: $custom-control-indicator-active-color;
     background-color: $custom-control-indicator-active-bg;
     border-color: $custom-control-indicator-active-border-color;
@@ -56,11 +56,12 @@
 
   // Use disabled attribute instead of :disabled pseudo-class
   // Workaround for: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11295231
-  &[disabled] {
+
+  &[ disabled ] {
     ~ .custom-control-label {
       color: $custom-control-label-disabled-color;
 
-      &::before {
+      &:before {
         background-color: $custom-control-indicator-disabled-bg;
       }
     }
@@ -79,7 +80,8 @@
   cursor: $custom-control-cursor;
 
   // Background-color and (when enabled) gradient
-  &::before {
+
+  &:before {
     position: absolute;
     top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
     left: -($custom-control-gutter + $custom-control-indicator-size);
@@ -94,7 +96,8 @@
   }
 
   // Foreground (icon)
-  &::after {
+
+  &:after {
     position: absolute;
     top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
     left: -($custom-control-gutter + $custom-control-indicator-size);
@@ -106,38 +109,39 @@
   }
 }
 
-
 // Checkboxes
 //
 // Tweak just a few things for checkboxes.
 
 .custom-checkbox {
-  .custom-control-label::before {
+  .custom-control-label:before {
     @include border-radius($custom-checkbox-indicator-border-radius);
   }
 
   .custom-control-input:checked ~ .custom-control-label {
-    &::after {
+    &:after {
       background-image: escape-svg($custom-checkbox-indicator-icon-checked);
     }
   }
 
   .custom-control-input:indeterminate ~ .custom-control-label {
-    &::before {
+    &:before {
       border-color: $custom-checkbox-indicator-indeterminate-border-color;
       @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
       @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
     }
-    &::after {
+
+    &:after {
       background-image: escape-svg($custom-checkbox-indicator-icon-indeterminate);
     }
   }
 
   .custom-control-input:disabled {
-    &:checked ~ .custom-control-label::before {
+    &:checked ~ .custom-control-label:before {
       background-color: $custom-control-indicator-checked-disabled-bg;
     }
-    &:indeterminate ~ .custom-control-label::before {
+
+    &:indeterminate ~ .custom-control-label:before {
       background-color: $custom-control-indicator-checked-disabled-bg;
     }
   }
@@ -148,24 +152,23 @@
 // Tweak just a few things for radios.
 
 .custom-radio {
-  .custom-control-label::before {
+  .custom-control-label:before {
     // stylelint-disable-next-line property-blacklist
     border-radius: $custom-radio-indicator-border-radius;
   }
 
   .custom-control-input:checked ~ .custom-control-label {
-    &::after {
+    &:after {
       background-image: escape-svg($custom-radio-indicator-icon-checked);
     }
   }
 
   .custom-control-input:disabled {
-    &:checked ~ .custom-control-label::before {
+    &:checked ~ .custom-control-label:before {
       background-color: $custom-control-indicator-checked-disabled-bg;
     }
   }
 }
-
 
 // switches
 //
@@ -175,7 +178,7 @@
   padding-left: $custom-switch-width + $custom-control-gutter;
 
   .custom-control-label {
-    &::before {
+    &:before {
       left: -($custom-switch-width + $custom-control-gutter);
       width: $custom-switch-width;
       pointer-events: all;
@@ -183,7 +186,7 @@
       border-radius: $custom-switch-indicator-border-radius;
     }
 
-    &::after {
+    &:after {
       top: add(($font-size-base * $line-height-base - $custom-control-indicator-size) / 2, $custom-control-indicator-border-width * 2);
       left: add(-($custom-switch-width + $custom-control-gutter), $custom-control-indicator-border-width * 2);
       width: $custom-switch-indicator-size;
@@ -191,24 +194,23 @@
       background-color: $custom-control-indicator-border-color;
       // stylelint-disable-next-line property-blacklist
       border-radius: $custom-switch-indicator-border-radius;
-      @include transition(transform .15s ease-in-out, $custom-forms-transition);
+      @include transition(transform 0.15s ease-in-out, $custom-forms-transition);
     }
   }
 
   .custom-control-input:checked ~ .custom-control-label {
-    &::after {
+    &:after {
       background-color: $custom-control-indicator-bg;
       transform: translateX($custom-switch-width - $custom-control-indicator-size);
     }
   }
 
   .custom-control-input:disabled {
-    &:checked ~ .custom-control-label::before {
+    &:checked ~ .custom-control-label:before {
       background-color: $custom-control-indicator-checked-disabled-bg;
     }
   }
 }
-
 
 // Select
 //
@@ -238,7 +240,8 @@
     outline: 0;
     @if $enable-shadows {
       box-shadow: $custom-select-box-shadow, $custom-select-focus-box-shadow;
-    } @else {
+    }
+    @else {
       box-shadow: $custom-select-focus-box-shadow;
     }
 
@@ -253,8 +256,8 @@
     }
   }
 
-  &[multiple],
-  &[size]:not([size="1"]) {
+  &[ multiple ],
+  &[ size ]:not([ size="1" ]) {
     height: auto;
     padding-right: $custom-select-padding-x;
     background-image: none;
@@ -266,11 +269,13 @@
   }
 
   // Hides the default caret in IE11
+
   &::-ms-expand {
     display: none;
   }
 
   // Remove outline from select box in FF
+
   &:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 $custom-select-color;
@@ -292,7 +297,6 @@
   padding-left: $custom-select-padding-x-lg;
   @include font-size($custom-select-font-size-lg);
 }
-
 
 // File
 //
@@ -321,7 +325,8 @@
 
   // Use disabled attribute instead of :disabled pseudo-class
   // Workaround for: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11295231
-  &[disabled] ~ .custom-file-label {
+
+  &[ disabled ] ~ .custom-file-label {
     background-color: $custom-file-disabled-bg;
   }
 
@@ -331,7 +336,7 @@
     }
   }
 
-  ~ .custom-file-label[data-browse]::after {
+  ~ .custom-file-label[ data-browse ]:after {
     content: attr(data-browse);
   }
 }
@@ -353,7 +358,7 @@
   @include border-radius($custom-file-border-radius);
   @include box-shadow($custom-file-box-shadow);
 
-  &::after {
+  &:after {
     position: absolute;
     top: 0;
     right: 0;
@@ -389,9 +394,12 @@
 
     // Pseudo-elements must be split across multiple rulesets to have an effect.
     // No box-shadow() mixin for focus accessibility.
+
     &::-webkit-slider-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
-    &::-moz-range-thumb     { box-shadow: $custom-range-thumb-focus-box-shadow; }
-    &::-ms-thumb            { box-shadow: $custom-range-thumb-focus-box-shadow; }
+
+    &::-moz-range-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
+
+    &::-ms-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
   }
 
   &::-moz-focus-outer {
@@ -514,7 +522,7 @@
   }
 }
 
-.custom-control-label::before,
+.custom-control-label:before,
 .custom-file-label,
 .custom-select {
   @include transition($custom-forms-transition);
