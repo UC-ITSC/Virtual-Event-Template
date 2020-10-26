@@ -1,6 +1,6 @@
 import React from 'react';
 import { Root, Routes } from 'react-static';
-import { Redirect, Router } from '@reach/router';
+import { Router } from '@reach/router';
 import { AnimatePresence, motion } from 'framer-motion';
 import { PresentationLayout } from './components/layout-blueprints';
 import './plugins/fontawesome';
