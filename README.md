@@ -19,28 +19,6 @@ Your goal will be to create a mini virtual IT expo to showcase your fellow inter
     3. Ask an internship peer
     4. Ask an mentor
 
-### Code Review Guidelines (reference this later when doing peer review)
-
-Every issue should be code reviewed by another internship peer
-
-#### Code Review Process
-
-1. Making a Pull Request
-   1. Create a Pull Request (PR) from your development branch (your current branch) into master (the main branch)
-        * [Creating a Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
-   2. Reach out to one of your fellow interns and ask them nicely to review your code. Include a link to the Pull Request you'd like them to review
-   3. Take any suggestions with a grain of salt. Remember, this is YOUR application. Make any changes you agree with and then merge the Pull Request
-2. Reviewing a Pull Request (PR)
-   1. Go the link supplied by whichever intern has requested a review from you
-   2. Look through their code, offering suggestions and critiques You should try to:
-       * Understand each part of the code and look for ways to improve it
-       * Be kind.  Remember that this is someone elses work that they've spent a lot of time on
-       * Balance criticism with praise.  It is tempting to only point out the negatives.  If you see something you like, tell them!
-       * Feel free to ask questions.  In the end, this is a learning process.  Feel free to ask questions if you don't understand something in the code.
-3. After a Pull Request (PR) has been approved, merge it and move on
-   * [Merging a Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request)
-   * Once merged, create a new branch from master and start on your next issue
-
 ## Technologies Used
 
 * NodeJS
@@ -78,7 +56,7 @@ Through all of these tasks, ensure the site you are building is accessible to pe
     * Resources:
         * [Creating a Repository from a Template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
 2. Copy the [Template Project Board](https://github.com/UC-ITSC/Virtual-Event-Template/projects/1)
-    * This is something you should keep constantly up-to-date. It is how we will track your progress, and it will facilitate code review and collaboration with your internship peers
+    * This is something you should keep constantly up-to-date. It is how we will track your progress.
         * Resources:
             * [Copying a Project Board](https://docs.github.com/en/github/managing-your-work-on-github/copying-a-project-board)
 3. Add the [Provided Issues](docs/issues.md) to your Project Board
@@ -100,22 +78,20 @@ Through all of these tasks, ensure the site you are building is accessible to pe
 
 ### Milestone 1
 
-1. Choose a front-end template to use
-    * Try searching for “Free React Templates” or use one of these [35 Free React Templates](https://dev.to/davidepacilio/35-free-react-templates-and-themes-32ci)
-2. Create the event home page including:
+1. Create the event home page including:
    * An embedded YouTube live stream
    * A schedule of events
-3. Create a page for each project type (DevOps, OCAT, VEaaS, etc) to list the projects for each one
+2. Create a page for each project type (DevOps, OCAT, VEaaS, etc) to list the projects for each one
    * This can be one template page that receives JSON data to populate the title and projects, but doesn’t have to be
-4. Create a template page to display each project
+3. Create a template page to display each project
    * Page should include a video embed, some text data about the project, and the name of the person who made the project
    * This should be a template page that receives JSON data to populate the specific project information, but you might have a different template page for each project type
-5. Publish the site to Netlify
+4. Publish the site to Netlify
    * [Make a Netlify account](https://app.netlify.com/signup?_ga=2.152698749.579539556.1598646102-1291164933.1598024532)
    * [Log in to Netlify from your command line](https://docs.netlify.com/cli/get-started/#authentication)
    * Run the command `npm run deploy:prod` to deploy
 
-### Milestone 2
+### Milestone 2 (Stretch tasks if time allows)
 
 1. Integrate a live chat for each project page
    * Recommend using [Disqus](https://disqus.com/)
