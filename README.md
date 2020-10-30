@@ -44,6 +44,7 @@ This is a static website and only relies on the built front-end code and the Net
 
 * JavaScript best practices (some are enforced by eslint)
 * Use of source control (git and github)
+  * Whenever you start a new task, you should make a branch from master, commit and push your code to the new branch often, and then merge to master when you are done
 
 ## Tasks
 
@@ -82,7 +83,6 @@ Through all of these tasks, ensure the site you are building is accessible to pe
    * An embedded YouTube live stream
    * A schedule of events
 2. Create a page for each project type (DevOps, OCAT, VEaaS, etc) to list the projects for each one
-   * This can be one template page that receives JSON data to populate the title and projects, but doesn’t have to be
 3. Create a template page to display each project
    * Page should include a video embed, some text data about the project, and the name of the person who made the project
    * This should be a template page that receives JSON data to populate the specific project information, but you might have a different template page for each project type

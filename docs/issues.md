@@ -13,12 +13,14 @@
 2. Build a project list page
 
     ```md
-    - [ ] Create a page for each project type to list the projects (This can be one template page that receives JSON data to populate the title and projects, but doesn’t have to be)
+    - [ ] Create a page for each project type to list the projects
       - [ ] DevOps
       - [ ] OCAT
       - [ ] VEaaS
       - [ ] CECH Web
     - [ ] For each project type, display each project by the name of the person working on it. Find a way to make this look better than just a list of links.
+
+    You do not need to get the actual information about each project and who is working on it. Just make some fake names of people.
     ```
 
 3. Create a template page to showcase each project
@@ -32,6 +34,9 @@
     - [ ] Create a section to describe the project
     - [ ] Create a section that includes the name of the person working on the project
     - [ ] Create a section for a YouTube video embed of the person working on the project explaining the project (use any placeholder video for now)
+
+    You do not need to get the actual information about each project and who is working on it. Just make a fake description and some fake names of people.
+    I like to use [https://loremipsum.io/](https://loremipsum.io/) for example text.
     ```
 
 4. Publish the site to Netlify
