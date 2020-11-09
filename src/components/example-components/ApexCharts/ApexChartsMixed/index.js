@@ -82,7 +82,7 @@ export default class LivePreviewExample extends Component {
   }
 
   render() {
-    const { optionsMixedChart, seriesMixedChart } = this.props;
+    const { optionsMixedChart, seriesMixedChart } = this.state;
 
     return (
       <Fragment>
