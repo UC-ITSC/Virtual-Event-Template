@@ -1,9 +1,10 @@
 {
   "extends": [
     "eslint:recommended",
-    "react-app"
+    "react-app",
+    "plugin:jsx-a11y/recommended"
   ],
-  "plugins": [ "import", "sort-destructure-keys" ],
+  "plugins": [ "import", "sort-destructure-keys", "jsx-a11y", "react-hooks", "react" ],
   "env": {
     "browser": true,
     "es2017": true,
@@ -59,7 +60,7 @@
     "no-eval": 2,
     "no-extra-bind": 2,
     "no-extra-label": 2,
-    "no-extra-parens": 2,
+    "no-extra-parens": [ 2, "all", { "nestedBinaryExpressions": false } ],
     "no-fallthrough": 0,
     "no-floating-decimal": 2,
     "no-implicit-coercion": [ 2, { "allow": [ "!!" ] } ],
@@ -103,6 +104,14 @@
     "prefer-object-spread": 2,
     "prefer-template": 2,
     "quote-props": [ 2, "consistent-as-needed", { "numbers": true } ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/destructuring-assignment": 2,
+    "react/jsx-equals-spacing": 2,
+    "react/jsx-indent": [ 2, 2, { "indentLogicalExpressions": true } ],
+    "react/jsx-indent-props": [ 2, 2 ],
+    "react/jsx-tag-spacing": 2,
+    "react/self-closing-comp": 2,
     "require-await": 2,
     "rest-spread-spacing": 2,
     "space-before-function-paren": [ 2, {
