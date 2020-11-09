@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { Col, Row } from 'reactstrap';
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import ButtonsBasic from '../../../components/example-components/Buttons/ButtonsBasic';
 import ButtonsGroups from '../../../components/example-components/Buttons/ButtonsGroups';
 import ButtonsGroupsSizing from '../../../components/example-components/Buttons/ButtonsGroupsSizing';
@@ -22,35 +22,35 @@ export default function Buttons() {
 
       <Row>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Basic">
+          <WrapperSimple sectionHeading="Basic">
             <ButtonsBasic />
             <div className="divider my-2" />
             <ButtonsSizing />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Button groups">
+          <WrapperSimple sectionHeading="Button groups">
             <div className="text-center">
               <ButtonsGroups />
               <div className="divider my-2" />
               <ButtonsGroupsSizing />
             </div>
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
         <Col xl="12">
-          <ExampleWrapperSimple sectionHeading="Colors">
+          <WrapperSimple sectionHeading="Colors">
             <ButtonsColors />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
       </Row>
 
-      <ExampleWrapperSimple sectionHeading="Links">
+      <WrapperSimple sectionHeading="Links">
         <ButtonsLinks />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
 
-      <ExampleWrapperSimple sectionHeading="Outline">
+      <WrapperSimple sectionHeading="Outline">
         <ButtonsOutline />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
     </Fragment>
   );
 }

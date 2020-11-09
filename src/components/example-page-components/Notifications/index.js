@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import NotificationsToasts from '../../../components/example-components/Notifications/NotificationsToasts';
 import NotificationsAlertsBasic from '../../../components/example-components/Notifications/NotificationsAlertsBasic';
 import NotificationsAlertsDismissible from
@@ -16,17 +16,17 @@ export default function Notifications() {
         titleDescription="Show beautiful, animated growl like notifications or alerts on your pages screens."
       />
 
-      <ExampleWrapperSimple sectionHeading="Basic alerts">
+      <WrapperSimple sectionHeading="Basic alerts">
         <NotificationsAlertsBasic />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
 
-      <ExampleWrapperSimple sectionHeading="Alerts dismissible">
+      <WrapperSimple sectionHeading="Alerts dismissible">
         <NotificationsAlertsDismissible />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
 
-      <ExampleWrapperSimple sectionHeading="Toasts">
+      <WrapperSimple sectionHeading="Toasts">
         <NotificationsToasts />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
     </Fragment>
   );
 }

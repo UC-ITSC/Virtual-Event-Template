@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import CarouselsBasic from '../../../components/example-components/Carousels/CarouselsBasic';
 export default function Carousels() {
   return (
@@ -12,9 +12,9 @@ export default function Carousels() {
         titleDescription="Create easy, simple to use and beautiful slideshows &amp; carousels with these components."
       />
 
-      <ExampleWrapperSimple sectionHeading="Basic carousel">
+      <WrapperSimple sectionHeading="Basic carousel">
         <CarouselsBasic />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
     </Fragment>
   );
 }

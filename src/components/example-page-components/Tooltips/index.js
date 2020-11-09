@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import TooltipsBasic from '../../../components/example-components/Tooltips/TooltipsBasic';
 export default function Tooltips() {
   return (
@@ -12,9 +12,9 @@ export default function Tooltips() {
         titleDescription="The tooltip or infotip or a hint is a common graphical user interface element."
       />
 
-      <ExampleWrapperSimple sectionHeading="Basic">
+      <WrapperSimple sectionHeading="Basic">
         <TooltipsBasic />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
     </Fragment>
   );
 }

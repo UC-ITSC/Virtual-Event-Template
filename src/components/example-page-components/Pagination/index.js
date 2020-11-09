@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { Col, Row } from 'reactstrap';
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import PaginationBasic from '../../../components/example-components/Pagination/PaginationBasic';
 import PaginationSizing from '../../../components/example-components/Pagination/PaginationSizing';
 export default function Pagination() {
@@ -16,14 +16,14 @@ export default function Pagination() {
 
       <Row>
         <Col lg="6">
-          <ExampleWrapperSimple sectionHeading="Basic">
+          <WrapperSimple sectionHeading="Basic">
             <PaginationBasic />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
         <Col lg="6">
-          <ExampleWrapperSimple sectionHeading="Sizing">
+          <WrapperSimple sectionHeading="Sizing">
             <PaginationSizing />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
       </Row>
     </Fragment>

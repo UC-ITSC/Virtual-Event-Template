@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import NavigationMenusHorizontal from
   '../../../components/example-components/NavigationMenus/NavigationMenusHorizontal';
 import NavigationMenusVerticalBasic from
@@ -16,13 +16,13 @@ export default function NavigationMenus() {
         titleDescription="Navigation menus are one of the basic building blocks for any web or mobile app."
       />
 
-      <ExampleWrapperSimple sectionHeading="Vertical menus">
+      <WrapperSimple sectionHeading="Vertical menus">
         <NavigationMenusVerticalBasic />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
 
-      <ExampleWrapperSimple sectionHeading="Horizontal menus">
+      <WrapperSimple sectionHeading="Horizontal menus">
         <NavigationMenusHorizontal />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
     </Fragment>
   );
 }

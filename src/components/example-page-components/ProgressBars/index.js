@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { Col, Row } from 'reactstrap';
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import ProgressBarsBasic from '../../../components/example-components/ProgressBars/ProgressBarsBasic';
 import ProgressBarsAnimated from '../../../components/example-components/ProgressBars/ProgressBarsAnimated';
 import ProgressBarsLabels from '../../../components/example-components/ProgressBars/ProgressBarsLabels';
@@ -20,26 +20,26 @@ export default function ProgressBars() {
 
       <Row>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Basic">
+          <WrapperSimple sectionHeading="Basic">
             <ProgressBarsBasic />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Labels">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Labels">
             <ProgressBarsLabels />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Animated">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Animated">
             <ProgressBarsAnimated />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Multiple">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Multiple">
             <ProgressBarsMultiple />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Rounded">
+          <WrapperSimple sectionHeading="Rounded">
             <ProgressBarsRounded />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Colors">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Colors">
             <ProgressBarsColors />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
       </Row>
     </Fragment>

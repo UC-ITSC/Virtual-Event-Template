@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { PageTitle } from '../../../components/layout-components';
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import UtilitiesHelpersPrimaryColors from
   '../../../components/example-components/UtilitiesHelpers/UtilitiesHelpersPrimaryColors';
 import UtilitiesHelpersNeutralColors from
@@ -16,16 +16,16 @@ export default function UtilitiesHelpers() {
         titleDescription="These are helpers that speed up the dev time for various components and effects."
       />
 
-      <ExampleWrapperSimple sectionHeading="Brand colors">
+      <WrapperSimple sectionHeading="Brand colors">
         <UtilitiesHelpersBrandColors />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
 
-      <ExampleWrapperSimple sectionHeading="Neutral colors">
+      <WrapperSimple sectionHeading="Neutral colors">
         <UtilitiesHelpersNeutralColors />
-      </ExampleWrapperSimple>
-      <ExampleWrapperSimple sectionHeading="Primary colors">
+      </WrapperSimple>
+      <WrapperSimple sectionHeading="Primary colors">
         <UtilitiesHelpersPrimaryColors />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
     </Fragment>
   );
 }

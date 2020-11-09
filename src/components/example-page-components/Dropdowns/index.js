@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { Col, Row } from 'reactstrap';
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import DropdownsBasic from '../../../components/example-components/Dropdowns/DropdownsBasic';
 import DropdownsSplit from '../../../components/example-components/Dropdowns/DropdownsSplit';
 export default function Dropdowns() {
@@ -17,14 +17,14 @@ export default function Dropdowns() {
 
       <Row>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Basic">
+          <WrapperSimple sectionHeading="Basic">
             <DropdownsBasic />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Split">
+          <WrapperSimple sectionHeading="Split">
             <DropdownsSplit />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
       </Row>
     </Fragment>

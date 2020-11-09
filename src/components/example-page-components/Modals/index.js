@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import ModalsBasic from '../../../components/example-components/Modals/ModalsBasic';
 export default function Modals() {
   return (
@@ -12,9 +12,9 @@ export default function Modals() {
         titleDescription="Wide selection of modal dialogs styles and animations available."
       />
 
-      <ExampleWrapperSimple sectionHeading="Basic">
+      <WrapperSimple sectionHeading="Basic">
         <ModalsBasic />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
     </Fragment>
   );
 }

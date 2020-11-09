@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { Col, Row } from 'reactstrap';
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import ApexChartsLine from '../../../components/example-components/ApexCharts/ApexChartsLine';
 import ApexChartsArea from '../../../components/example-components/ApexCharts/ApexChartsArea';
 import ApexChartsColumn from '../../../components/example-components/ApexCharts/ApexChartsColumn';
@@ -22,32 +22,32 @@ export default function ApexCharts() {
 
       <Row>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Area">
+          <WrapperSimple sectionHeading="Area">
             <ApexChartsArea />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Column">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Column">
             <ApexChartsColumn />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Line">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Line">
             <ApexChartsLine />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Radar">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Radar">
             <ApexChartsRadar />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Bar">
+          <WrapperSimple sectionHeading="Bar">
             <ApexChartsBar />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Heatmap">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Heatmap">
             <ApexChartsHeatmap />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Mixed">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Mixed">
             <ApexChartsMixed />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Radial bar">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Radial bar">
             <ApexChartsRadialbar />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
       </Row>
     </Fragment>

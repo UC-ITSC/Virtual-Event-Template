@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { Col, Row } from 'reactstrap';
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import BadgesBasic from '../../../components/example-components/Badges/BadgesBasic';
 import BadgesPills from '../../../components/example-components/Badges/BadgesPills';
 import BadgesButtons from '../../../components/example-components/Badges/BadgesButtons';
@@ -17,17 +17,17 @@ export default function Badges() {
 
       <Row>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Basic">
+          <WrapperSimple sectionHeading="Basic">
             <BadgesBasic />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
         <Col xl="6">
-          <ExampleWrapperSimple sectionHeading="Pills">
+          <WrapperSimple sectionHeading="Pills">
             <BadgesPills />
-          </ExampleWrapperSimple>
-          <ExampleWrapperSimple sectionHeading="Buttons with label badges">
+          </WrapperSimple>
+          <WrapperSimple sectionHeading="Buttons with label badges">
             <BadgesButtons />
-          </ExampleWrapperSimple>
+          </WrapperSimple>
         </Col>
       </Row>
     </Fragment>

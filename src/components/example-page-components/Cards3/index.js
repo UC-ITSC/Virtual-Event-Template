@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
 import { PageTitle } from '../../../components/layout-components';
-import { ExampleWrapperSeamless } from '../../../components/layout-components';
+import { WrapperSeamless } from '../../../components/layout-components';
 
 import Cards1Examples1 from '../../../components/example-components/Cards1/Cards1Examples1';
 import Cards4Examples23 from '../../../components/example-components/Cards4/Cards4Examples23';
@@ -21,36 +21,36 @@ export default function Cards3() {
         titleDescription="Wide selection of cards with multiple styles, borders, actions and hover effects."
       />
 
-      <ExampleWrapperSeamless sectionHeading="Cards 1">
+      <WrapperSeamless sectionHeading="Cards 1">
         <Cards1Examples1 />
-      </ExampleWrapperSeamless>
-      <ExampleWrapperSeamless sectionHeading="Cards 2">
+      </WrapperSeamless>
+      <WrapperSeamless sectionHeading="Cards 2">
         <Cards2Examples8 />
-      </ExampleWrapperSeamless>
-      <ExampleWrapperSeamless sectionHeading="Cards 3">
+      </WrapperSeamless>
+      <WrapperSeamless sectionHeading="Cards 3">
         <Cards5Examples29 />
-      </ExampleWrapperSeamless>
-      <ExampleWrapperSeamless sectionHeading="Cards 4">
+      </WrapperSeamless>
+      <WrapperSeamless sectionHeading="Cards 4">
         <Cards7Examples48 />
-      </ExampleWrapperSeamless>
-      <ExampleWrapperSeamless sectionHeading="Cards 5">
+      </WrapperSeamless>
+      <WrapperSeamless sectionHeading="Cards 5">
         <Cards8Examples55 />
-      </ExampleWrapperSeamless>
-      <ExampleWrapperSeamless sectionHeading="Cards 6">
+      </WrapperSeamless>
+      <WrapperSeamless sectionHeading="Cards 6">
         <Cards9Examples56 />
-      </ExampleWrapperSeamless>
-      <ExampleWrapperSeamless sectionHeading="Cards 7">
+      </WrapperSeamless>
+      <WrapperSeamless sectionHeading="Cards 7">
         <Cards9Examples61 />
-      </ExampleWrapperSeamless>
-      <ExampleWrapperSeamless sectionHeading="Cards 8">
+      </WrapperSeamless>
+      <WrapperSeamless sectionHeading="Cards 8">
         <Cards11Examples70 />
-      </ExampleWrapperSeamless>
-      <ExampleWrapperSeamless sectionHeading="Cards 9">
+      </WrapperSeamless>
+      <WrapperSeamless sectionHeading="Cards 9">
         <Cards12Examples79 />
-      </ExampleWrapperSeamless>
-      <ExampleWrapperSeamless sectionHeading="Cards 10">
+      </WrapperSeamless>
+      <WrapperSeamless sectionHeading="Cards 10">
         <Cards4Examples23 />
-      </ExampleWrapperSeamless>
+      </WrapperSeamless>
     </Fragment>
   );
 }

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import PopoversBasic from '../../../components/example-components/Popovers/PopoversBasic';
 export default function Popovers() {
   return (
@@ -13,9 +13,9 @@ export default function Popovers() {
         titleDescription="Add small overlay content, like those found in iOS, to any element for housing secondary information."
       />
 
-      <ExampleWrapperSimple sectionHeading="Basic">
+      <WrapperSimple sectionHeading="Basic">
         <PopoversBasic />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
     </Fragment>
   );
 }

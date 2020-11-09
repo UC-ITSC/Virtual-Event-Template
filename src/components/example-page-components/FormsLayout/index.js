@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import { PageTitle } from '../../../components/layout-components';
 
-import { ExampleWrapperSimple } from '../../../components/layout-components';
+import { WrapperSimple } from '../../../components/layout-components';
 import FormsLayoutBasic from '../../../components/example-components/FormsLayout/FormsLayoutBasic';
 import FormsLayoutGrids from '../../../components/example-components/FormsLayout/FormsLayoutGrids';
 export default function FormsLayout() {
@@ -13,12 +13,12 @@ export default function FormsLayout() {
         titleDescription="Build whatever layout you need with our modular user interface framework."
       />
 
-      <ExampleWrapperSimple sectionHeading="Basic">
+      <WrapperSimple sectionHeading="Basic">
         <FormsLayoutBasic />
-      </ExampleWrapperSimple>
-      <ExampleWrapperSimple sectionHeading="Grids">
+      </WrapperSimple>
+      <WrapperSimple sectionHeading="Grids">
         <FormsLayoutGrids />
-      </ExampleWrapperSimple>
+      </WrapperSimple>
     </Fragment>
   );
 }

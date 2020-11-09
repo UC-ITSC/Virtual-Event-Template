@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import { ExampleWrapperSeamless, PageTitle } from '../../../components/layout-components';
+import { PageTitle, WrapperSeamless } from '../../../components/layout-components';
 
 import RegularTables4Example7 from '../../../components/example-components/RegularTables4/RegularTables4Example7';
 export default function RegularTables4() {
@@ -11,9 +11,9 @@ export default function RegularTables4() {
         titleDescription="Tables are the backbone of almost all web applications."
       />
 
-      <ExampleWrapperSeamless sectionHeading="">
+      <WrapperSeamless sectionHeading="">
         <RegularTables4Example7 />
-      </ExampleWrapperSeamless>
+      </WrapperSeamless>
     </Fragment>
   );
 }
