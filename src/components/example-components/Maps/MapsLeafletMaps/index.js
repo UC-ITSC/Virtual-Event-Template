@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
-export default function LivePreviewExample() {
+const LivePreviewExample = () => {
   const lat = 51.505;
   const lng = -0.09;
   const zoom = 5;
@@ -24,4 +24,6 @@ export default function LivePreviewExample() {
       </Map>
     </Fragment>
   );
-}
+};
+
+export default LivePreviewExample;

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import Chart from 'react-apexcharts';
 
-export default function LivePreviewExample() {
+const LivePreviewExample = () => {
   const options = {
     xaxis: {
       categories: [ `Sun`, `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`, `Sun` ],
@@ -24,4 +24,6 @@ export default function LivePreviewExample() {
       <Chart options={options} series={series} type="area" />
     </Fragment>
   );
-}
+};
+
+export default LivePreviewExample;

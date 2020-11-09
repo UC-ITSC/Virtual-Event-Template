@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import Chart from 'react-apexcharts';
 
-export default function LivePreviewExample() {
+const LivePreviewExample = () => {
   const series = [
     {
       data: [
@@ -94,4 +94,6 @@ export default function LivePreviewExample() {
       <Chart options={options} series={series} type="heatmap" height={350} />
     </Fragment>
   );
-}
+};
+
+export default LivePreviewExample;

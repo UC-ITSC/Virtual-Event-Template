@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import Chart from 'react-apexcharts';
 
-export default function LivePreviewExample() {
+const LivePreviewExample = () => {
   const options = {
     labels: [ `A`, `B`, `C`, `D`, `E` ],
   };
@@ -15,4 +15,6 @@ export default function LivePreviewExample() {
       </div>
     </Fragment>
   );
-}
+};
+
+export default LivePreviewExample;

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import Chart from 'react-apexcharts';
 
-export default function LivePreviewExample() {
+const LivePreviewExample = () => {
   const options = {
     dataLabels: {
       enabled: false,
@@ -21,4 +21,6 @@ export default function LivePreviewExample() {
       <Chart options={options} series={series} type="bar" />
     </Fragment>
   );
-}
+};
+
+export default LivePreviewExample;

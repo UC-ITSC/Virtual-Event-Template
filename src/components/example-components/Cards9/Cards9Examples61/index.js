@@ -17,7 +17,7 @@ import {
 
 import Chart from 'react-apexcharts';
 
-export default function LivePreviewExample() {
+const LivePreviewExample = () => {
   const chart2Options = {
     chart: {
       sparkline: {
@@ -435,4 +435,6 @@ export default function LivePreviewExample() {
       </Row>
     </Fragment>
   );
-}
+};
+
+export default LivePreviewExample;

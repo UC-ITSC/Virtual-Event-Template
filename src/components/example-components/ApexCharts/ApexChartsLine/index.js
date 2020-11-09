@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import Chart from 'react-apexcharts';
 
-export default function LivePreviewExample() {
+const LivePreviewExample = () => {
   const options = {
     markers: {
       size: 0,
@@ -24,4 +24,6 @@ export default function LivePreviewExample() {
       <Chart options={options} series={series} type="line" />
     </Fragment>
   );
-}
+};
+
+export default LivePreviewExample;

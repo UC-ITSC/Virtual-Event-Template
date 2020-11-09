@@ -4,7 +4,7 @@ import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-export default function LivePreviewExample() {
+const LivePreviewExample = () => {
   const center = {
     lat: 59.95,
     lng: 30.33,
@@ -19,4 +19,6 @@ export default function LivePreviewExample() {
       </div>
     </Fragment>
   );
-}
+};
+
+export default LivePreviewExample;

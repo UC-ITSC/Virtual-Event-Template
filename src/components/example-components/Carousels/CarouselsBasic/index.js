@@ -7,7 +7,7 @@ import { Button, Card, Col, Row } from 'reactstrap';
 import { UncontrolledCarousel } from 'reactstrap';
 import hero8 from '../../../../assets/images/hero-bg/hero-8.jpg';
 
-export default function LivePreviewExample() {
+const LivePreviewExample = () => {
   const items = [
     {
       altText: `Slide 1`,
@@ -96,4 +96,6 @@ export default function LivePreviewExample() {
       </div>
     </Fragment>
   );
-}
+};
+
+export default LivePreviewExample;
