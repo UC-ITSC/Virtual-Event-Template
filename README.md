@@ -39,6 +39,7 @@ This is a static website and only relies on the built front-end code and the Net
 
 * [2020 IT EXPO](https://itexpo20.live)
 * [Political Science Nexus 2020](https://poliscinexus20.live)
+* [UC International Online Conference](https://ucintlconference.live)
 
 ## Universal Concepts
 
