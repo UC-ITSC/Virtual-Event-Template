@@ -37,7 +37,7 @@ class Header extends Component {
                 <NavLink tag={Link} className="d-block mr-1" to="/blog">Blog</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} className="d-block mr-1" to="/example-pages/LandingPage">Template Page</NavLink>
+                <NavLink tag={Link} className="d-block mr-1" to="/example-page">Template Page</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink tag={Link} className="d-block mr-1" to="#/">Link</NavLink>

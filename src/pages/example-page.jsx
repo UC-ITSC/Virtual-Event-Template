@@ -3,34 +3,36 @@ import React, { Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Badge, Button, UncontrolledTooltip } from 'reactstrap';
-import hero8 from '../../../assets/images/hero-bg/hero-8.jpg';
+import hero8 from '../assets/images/hero-bg/hero-8.jpg';
 
-import IconsFontawesome from '../../../components/example-components/Icons/IconsFontawesome';
-import IconsPe7 from '../../../components/example-components/Icons/IconsPe7';
+import IconsFontawesome from '../components/example-components/Icons/IconsFontawesome';
+import IconsPe7 from '../components/example-components/Icons/IconsPe7';
 
-import Buttons from '../Buttons';
-import Dropdowns from '../Dropdowns';
-import NavigationMenus from '../NavigationMenus';
-import ProgressBars from '../ProgressBars';
-import Pagination from '../Pagination';
-import Scrollable from '../Scrollable';
-import Badges from '../Badges';
-import Icons from '../Icons';
-import UtilitiesHelpers from '../UtilitiesHelpers';
-import Cards3 from '../Cards3';
-import ListGroups from '../ListGroups';
-import Modals from '../Modals';
-import Notifications from '../Notifications';
-import Carousels from '../Carousels';
-import Popovers from '../Popovers';
-import Tooltips from '../Tooltips';
-import Tabs from '../Tabs';
-import RegularTables1 from '../RegularTables1';
-import RegularTables4 from '../RegularTables4';
-import FormsLayout from '../FormsLayout';
-import FormsControls from '../FormsControls';
-import ApexCharts from '../ApexCharts';
-import Maps from '../Maps';
+import {
+  ApexCharts,
+  Badges,
+  Buttons,
+  Cards3,
+  Carousels,
+  Dropdowns,
+  FormsControls,
+  FormsLayout,
+  Icons,
+  ListGroups,
+  Maps,
+  Modals,
+  NavigationMenus,
+  Notifications,
+  Pagination,
+  Popovers,
+  ProgressBars,
+  RegularTables1,
+  RegularTables4,
+  Scrollable,
+  Tabs,
+  Tooltips,
+  UtilitiesHelpers,
+} from '../components/example-page-components';
 
 const LandingPage = () =>
   <Fragment>

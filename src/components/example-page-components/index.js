@@ -15,7 +15,6 @@ export { default as Popovers } from './Popovers';
 export { default as Tooltips } from './Tooltips';
 export { default as Tabs } from './Tabs';
 export { default as Cards3 } from './Cards3';
-export { default as LandingPage } from './LandingPage';
 export { default as RegularTables1 } from './RegularTables1';
 export { default as RegularTables4 } from './RegularTables4';
 export { default as FormsLayout } from './FormsLayout';
