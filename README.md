@@ -68,6 +68,7 @@ Through all of these tasks, ensure the site you are building is accessible to pe
       * [MacOS Installer for 12.19.0](https://nodejs.org/dist/latest-v12.x/node-v12.19.0.pkg)
       * [Windows x64 Installer for 12.19.0](https://nodejs.org/dist/latest-v12.x/node-v12.19.0-x64.msi)
       * [Windows x86 Installer for 12.19.0](https://nodejs.org/dist/latest-v12.x/node-v12.19.0-x86.msi)
+      * [Latest 12.x for all platforms](https://nodejs.org/dist/latest-v12.x/)
 5. Install [VS Code](https://code.visualstudio.com/) your computer
 6. Clone the project from GitHub
       * See the resources belong on using Git
