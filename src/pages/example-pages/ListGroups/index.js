@@ -11,8 +11,8 @@ export default function ListGroups() {
     <Fragment>
       <PageTitle
         titleHeading="List Groups"
-        titleDescription=
-          "These can be used with other components and elements to create stunning and unique new elements for your UIs"
+        // eslint-disable-next-line max-len
+        titleDescription="These can be used with other components and elements to create stunning and unique new elements for your UIs"
       />
 
       <ExampleWrapperSeamless sectionHeading="Examples variations IV">

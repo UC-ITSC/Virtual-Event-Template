@@ -25,7 +25,9 @@ export default class LivePreviewExample extends Component {
   }
 
   render() {
-    const files = this.state.files.map(file =>
+    const { files } = this.props;
+
+    const fileList = files.map(file =>
       <ListGroupItem key={file.name}>
         {file.name} - {file.size} bytes
       </ListGroupItem>);
@@ -61,17 +63,17 @@ export default class LivePreviewExample extends Component {
             md="6"
             className="d-flex justify-content-center align-items-center">
             <div className="w-100">
-              {this.state.files.length === 0 &&
+              {files.length === 0 &&
                 <Alert color="success">
                   Files uploaded for demo purposes will appear here!
                 </Alert>
               }
-              {this.state.files.length > 0 &&
+              {files.length > 0 &&
                 <ListGroup>
                   <ListGroupItem className="font-weight-bold text-center">
                     Uploaded Files
                   </ListGroupItem>
-                  {files}
+                  {fileList}
                 </ListGroup>
               }
             </div>

@@ -35,7 +35,7 @@ const App = () =>
         // eslint-disable-next-line max-len
         <div className="d-flex align-items-center vh-100 justify-content-center text-center font-weight-bold font-size-lg py-3">
           <div className="w-50 mx-auto">
-              Please wait while we load the website
+            Please wait while we load the website
           </div>
         </div>
       }>

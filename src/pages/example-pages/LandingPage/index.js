@@ -52,31 +52,31 @@ const LandingPage = () =>
                       color="info"
                       className="px-4 text-uppercase h-auto py-1"
                       id="ProjVersion123">
-                        FREE react UI Kit
+                      FREE react UI Kit
                     </Badge>
                     <UncontrolledTooltip
                       placement="top"
                       target="ProjVersion123">
-                        Version: 1.1.0
+                      Version: 1.1.0
                     </UncontrolledTooltip>
 
                     <div className="px-4 px-sm-0 text-white mt-5">
                       <h1 className="display-2 mb-5 font-weight-bold">
-                          Bamburgh React UI Kit with Reactstrap Free
+                        Bamburgh React UI Kit with Reactstrap Free
                       </h1>
                       <p className="font-size-xl text-white-50 mb-3">
-                          This React Ui Kit will bring you a beautiful and
-                          custom Bootstrap style to use in your presentation
-                          websites.
+                        This React Ui Kit will bring you a beautiful and
+                        custom Bootstrap style to use in your presentation
+                        websites.
                       </p>
                       <p className="text-white font-size-lg">
-                          Working on a smaller project and need a simple,
-                          beautiful and easy to use Ui Kit? Search no more,
-                          you&#39;ve found the perfect one.
+                        Working on a smaller project and need a simple,
+                        beautiful and easy to use Ui Kit? Search no more,
+                        you&#39;ve found the perfect one.
                       </p>
                       <div
-                        className=
-                          "divider border-2 border-light my-5 border-light opacity-2 mx-auto rounded-circle w-50"
+                        // eslint-disable-next-line max-len
+                        className="divider border-2 border-light my-5 border-light opacity-2 mx-auto rounded-circle w-50"
                       />
                       <div>
                         <Button
@@ -91,7 +91,7 @@ const LandingPage = () =>
                             <FontAwesomeIcon icon={[ `fas`, `download` ]} />
                           </span>
                           <span className="btn-wrapper--label">
-                              Download now
+                            Download now
                           </span>
                         </Button>
                         <Button
@@ -108,13 +108,13 @@ const LandingPage = () =>
                             />
                           </span>
                           <span className="btn-wrapper--label">
-                              PRO Version
+                            PRO Version
                           </span>
                         </Button>
                       </div>
                       <small className="d-block pt-4">
-                          For a comprehensive list of components &amp;
-                          commercial licenses, we recommend the PRO version.
+                        For a comprehensive list of components &amp;
+                        commercial licenses, we recommend the PRO version.
                       </small>
                     </div>
                   </div>
@@ -142,11 +142,11 @@ const LandingPage = () =>
         <div className="container">
           <div className="px-0 col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
             <h1 className="display-3 mb-4 font-weight-bold">
-                Bamburgh UI Kit is available for multiple frameworks
+              Bamburgh UI Kit is available for multiple frameworks
             </h1>
             <p className="font-size-lg text-black-50">
-                Bamburgh is also available with integrations for the following
-                frontend/backend frameworks:
+              Bamburgh is also available with integrations for the following
+              frontend/backend frameworks:
             </p>
           </div>
         </div>
@@ -163,7 +163,7 @@ const LandingPage = () =>
                   alt="Bamburgh React UI Kit with Reactstrap Free"
                 />
                 <span className="text-black-50 details-helper">
-                    Click for details
+                  Click for details
                 </span>
               </a>
             </div>
@@ -178,7 +178,7 @@ const LandingPage = () =>
                   alt="Bamburgh React UI Kit with Reactstrap Free"
                 />
                 <span className="text-black-50 details-helper">
-                    Click for details
+                  Click for details
                 </span>
               </a>
             </div>
@@ -190,7 +190,7 @@ const LandingPage = () =>
                   alt="Bamburgh for Vue.js"
                 />
                 <i className="details-helper text-black-50">
-                    Not yet available
+                  Not yet available
                 </i>
               </div>
             </div>
@@ -202,7 +202,7 @@ const LandingPage = () =>
                   alt="Bamburgh for HTML5/jQuery"
                 />
                 <i className="details-helper text-black-50">
-                    Not yet available
+                  Not yet available
                 </i>
               </div>
             </div>
@@ -214,7 +214,7 @@ const LandingPage = () =>
                   alt="Bamburgh for Laravel"
                 />
                 <i className="details-helper text-black-50">
-                    Not yet available
+                  Not yet available
                 </i>
               </div>
             </div>
@@ -226,7 +226,7 @@ const LandingPage = () =>
                   alt="Bamburgh for Node.js"
                 />
                 <i className="details-helper text-black-50">
-                    Not yet available
+                  Not yet available
                 </i>
               </div>
             </div>
@@ -238,7 +238,7 @@ const LandingPage = () =>
                   alt="Bamburgh for ASP.NET"
                 />
                 <i className="details-helper text-black-50">
-                    Not yet available
+                  Not yet available
                 </i>
               </div>
             </div>
@@ -250,7 +250,7 @@ const LandingPage = () =>
                   alt="Bamburgh for Nuxt.js"
                 />
                 <i className="details-helper text-black-50">
-                    Not yet available
+                  Not yet available
                 </i>
               </div>
             </div>
@@ -262,7 +262,7 @@ const LandingPage = () =>
                   alt="Bamburgh for Next.js"
                 />
                 <i className="details-helper text-black-50">
-                    Not yet available
+                  Not yet available
                 </i>
               </div>
             </div>
@@ -274,7 +274,7 @@ const LandingPage = () =>
                   alt="Bamburgh for React Native"
                 />
                 <i className="details-helper text-black-50">
-                    Not yet available
+                  Not yet available
                 </i>
               </div>
             </div>
@@ -286,7 +286,7 @@ const LandingPage = () =>
                   alt="Bamburgh for Flutter"
                 />
                 <i className="details-helper text-black-50">
-                    Not yet available
+                  Not yet available
                 </i>
               </div>
             </div>

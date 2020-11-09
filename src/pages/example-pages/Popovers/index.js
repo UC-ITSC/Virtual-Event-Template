@@ -9,8 +9,8 @@ export default function Popovers() {
     <Fragment>
       <PageTitle
         titleHeading="Popovers"
-        titleDescription=
-          "Add small overlay content, like those found in iOS, to any element for housing secondary information."
+        // eslint-disable-next-line max-len
+        titleDescription="Add small overlay content, like those found in iOS, to any element for housing secondary information."
       />
 
       <ExampleWrapperSimple sectionHeading="Basic">

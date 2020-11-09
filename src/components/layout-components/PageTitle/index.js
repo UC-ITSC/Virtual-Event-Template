@@ -2,14 +2,15 @@ import React, { Component, Fragment } from 'react';
 
 class PageTitle extends Component {
   render() {
+    const { titleDescription, titleHeading } = this.props;
     return (
       <Fragment>
         <div className="mb-5">
           <h1 className="display-3 mb-3 font-weight-bold text-capitalize">
-            {this.props.titleHeading}
+            {titleHeading}
           </h1>
           <p className="font-size-xl text-black-50">
-            {this.props.titleDescription}
+            {titleDescription}
           </p>
         </div>
       </Fragment>

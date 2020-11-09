@@ -69,8 +69,9 @@ export default class LivePreviewExample extends Component {
     const max = 90;
     const min = 30;
     const newMixedSeries = [];
+    const { seriesMixedChart } = this.props;
 
-    this.state.seriesMixedChart.forEach(s => {
+    seriesMixedChart.forEach(s => {
       const data = s.data.map(() => Math.floor(Math.random() * (max - min + 1)) + min);
       newMixedSeries.push({ data, type: s.type });
     });
@@ -81,11 +82,13 @@ export default class LivePreviewExample extends Component {
   }
 
   render() {
+    const { optionsMixedChart, seriesMixedChart } = this.props;
+
     return (
       <Fragment>
         <Chart
-          options={this.state.optionsMixedChart}
-          series={this.state.seriesMixedChart}
+          options={optionsMixedChart}
+          series={seriesMixedChart}
           type="line"
         />
 
