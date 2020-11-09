@@ -12,44 +12,44 @@ import ApexChartsMixed from '../../../components/example-components/ApexCharts/A
 import ApexChartsHeatmap from '../../../components/example-components/ApexCharts/ApexChartsHeatmap';
 import ApexChartsRadialbar from '../../../components/example-components/ApexCharts/ApexChartsRadialbar';
 import ApexChartsRadar from '../../../components/example-components/ApexCharts/ApexChartsRadar';
-export default function ApexCharts() {
-  return (
-    <Fragment>
-      <PageTitle
-        titleHeading="Apex Charts"
-        titleDescription="Wonderful animated charts built with ApexCharts components."
-      />
 
-      <Row>
-        <Col xl="6">
-          <WrapperSimple sectionHeading="Area">
-            <ApexChartsArea />
-          </WrapperSimple>
-          <WrapperSimple sectionHeading="Column">
-            <ApexChartsColumn />
-          </WrapperSimple>
-          <WrapperSimple sectionHeading="Line">
-            <ApexChartsLine />
-          </WrapperSimple>
-          <WrapperSimple sectionHeading="Radar">
-            <ApexChartsRadar />
-          </WrapperSimple>
-        </Col>
-        <Col xl="6">
-          <WrapperSimple sectionHeading="Bar">
-            <ApexChartsBar />
-          </WrapperSimple>
-          <WrapperSimple sectionHeading="Heatmap">
-            <ApexChartsHeatmap />
-          </WrapperSimple>
-          <WrapperSimple sectionHeading="Mixed">
-            <ApexChartsMixed />
-          </WrapperSimple>
-          <WrapperSimple sectionHeading="Radial bar">
-            <ApexChartsRadialbar />
-          </WrapperSimple>
-        </Col>
-      </Row>
-    </Fragment>
-  );
-}
+const ApexCharts = () =>
+  <Fragment>
+    <PageTitle
+      titleHeading="Apex Charts"
+      titleDescription="Wonderful animated charts built with ApexCharts components."
+    />
+
+    <Row>
+      <Col xl="6">
+        <WrapperSimple sectionHeading="Area">
+          <ApexChartsArea />
+        </WrapperSimple>
+        <WrapperSimple sectionHeading="Column">
+          <ApexChartsColumn />
+        </WrapperSimple>
+        <WrapperSimple sectionHeading="Line">
+          <ApexChartsLine />
+        </WrapperSimple>
+        <WrapperSimple sectionHeading="Radar">
+          <ApexChartsRadar />
+        </WrapperSimple>
+      </Col>
+      <Col xl="6">
+        <WrapperSimple sectionHeading="Bar">
+          <ApexChartsBar />
+        </WrapperSimple>
+        <WrapperSimple sectionHeading="Heatmap">
+          <ApexChartsHeatmap />
+        </WrapperSimple>
+        <WrapperSimple sectionHeading="Mixed">
+          <ApexChartsMixed />
+        </WrapperSimple>
+        <WrapperSimple sectionHeading="Radial bar">
+          <ApexChartsRadialbar />
+        </WrapperSimple>
+      </Col>
+    </Row>
+  </Fragment>;
+
+export default ApexCharts;

@@ -8,24 +8,23 @@ import UtilitiesHelpersNeutralColors from
 import UtilitiesHelpersBrandColors from
   '../../../components/example-components/UtilitiesHelpers/UtilitiesHelpersBrandColors';
 
-export default function UtilitiesHelpers() {
-  return (
-    <Fragment>
-      <PageTitle
-        titleHeading="Utilities &amp; Helpers"
-        titleDescription="These are helpers that speed up the dev time for various components and effects."
-      />
+const UtilitiesHelpers = () =>
+  <Fragment>
+    <PageTitle
+      titleHeading="Utilities &amp; Helpers"
+      titleDescription="These are helpers that speed up the dev time for various components and effects."
+    />
 
-      <WrapperSimple sectionHeading="Brand colors">
-        <UtilitiesHelpersBrandColors />
-      </WrapperSimple>
+    <WrapperSimple sectionHeading="Brand colors">
+      <UtilitiesHelpersBrandColors />
+    </WrapperSimple>
 
-      <WrapperSimple sectionHeading="Neutral colors">
-        <UtilitiesHelpersNeutralColors />
-      </WrapperSimple>
-      <WrapperSimple sectionHeading="Primary colors">
-        <UtilitiesHelpersPrimaryColors />
-      </WrapperSimple>
-    </Fragment>
-  );
-}
+    <WrapperSimple sectionHeading="Neutral colors">
+      <UtilitiesHelpersNeutralColors />
+    </WrapperSimple>
+    <WrapperSimple sectionHeading="Primary colors">
+      <UtilitiesHelpersPrimaryColors />
+    </WrapperSimple>
+  </Fragment>;
+
+export default UtilitiesHelpers;

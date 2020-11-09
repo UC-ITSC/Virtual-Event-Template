@@ -5,19 +5,19 @@ import { WrapperSeamless } from '../../../components/layout-components';
 
 import FormsControlsBasic from '../../../components/example-components/FormsControls/FormsControlsBasic';
 import FormsControlsInputGroups from '../../../components/example-components/FormsControls/FormsControlsInputGroups';
-export default function FormsControls() {
-  return (
-    <Fragment>
-      <PageTitle
-        titleHeading="Controls"
-        titleDescription="Wide selection of forms controls, using a standardized code base, specifically for React."
-      />
-      <WrapperSeamless sectionHeading="Basic">
-        <FormsControlsBasic />
-      </WrapperSeamless>
-      <WrapperSeamless sectionHeading="Input groups">
-        <FormsControlsInputGroups />
-      </WrapperSeamless>
-    </Fragment>
-  );
-}
+
+const FormsControls = () =>
+  <Fragment>
+    <PageTitle
+      titleHeading="Controls"
+      titleDescription="Wide selection of forms controls, using a standardized code base, specifically for React."
+    />
+    <WrapperSeamless sectionHeading="Basic">
+      <FormsControlsBasic />
+    </WrapperSeamless>
+    <WrapperSeamless sectionHeading="Input groups">
+      <FormsControlsInputGroups />
+    </WrapperSeamless>
+  </Fragment>;
+
+export default FormsControls;

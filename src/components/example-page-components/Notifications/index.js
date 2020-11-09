@@ -8,25 +8,24 @@ import NotificationsAlertsBasic from '../../../components/example-components/Not
 import NotificationsAlertsDismissible from
   '../../../components/example-components/Notifications/NotificationsAlertsDismissible';
 
-export default function Notifications() {
-  return (
-    <Fragment>
-      <PageTitle
-        titleHeading="Notifications"
-        titleDescription="Show beautiful, animated growl like notifications or alerts on your pages screens."
-      />
+const Notifications = () =>
+  <Fragment>
+    <PageTitle
+      titleHeading="Notifications"
+      titleDescription="Show beautiful, animated growl like notifications or alerts on your pages screens."
+    />
 
-      <WrapperSimple sectionHeading="Basic alerts">
-        <NotificationsAlertsBasic />
-      </WrapperSimple>
+    <WrapperSimple sectionHeading="Basic alerts">
+      <NotificationsAlertsBasic />
+    </WrapperSimple>
 
-      <WrapperSimple sectionHeading="Alerts dismissible">
-        <NotificationsAlertsDismissible />
-      </WrapperSimple>
+    <WrapperSimple sectionHeading="Alerts dismissible">
+      <NotificationsAlertsDismissible />
+    </WrapperSimple>
 
-      <WrapperSimple sectionHeading="Toasts">
-        <NotificationsToasts />
-      </WrapperSimple>
-    </Fragment>
-  );
-}
+    <WrapperSimple sectionHeading="Toasts">
+      <NotificationsToasts />
+    </WrapperSimple>
+  </Fragment>;
+
+export default Notifications;

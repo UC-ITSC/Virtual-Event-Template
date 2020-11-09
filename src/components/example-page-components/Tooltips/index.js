@@ -4,17 +4,17 @@ import { PageTitle } from '../../../components/layout-components';
 
 import { WrapperSimple } from '../../../components/layout-components';
 import TooltipsBasic from '../../../components/example-components/Tooltips/TooltipsBasic';
-export default function Tooltips() {
-  return (
-    <Fragment>
-      <PageTitle
-        titleHeading="Tooltips"
-        titleDescription="The tooltip or infotip or a hint is a common graphical user interface element."
-      />
 
-      <WrapperSimple sectionHeading="Basic">
-        <TooltipsBasic />
-      </WrapperSimple>
-    </Fragment>
-  );
-}
+const Tooltips = () =>
+  <Fragment>
+    <PageTitle
+      titleHeading="Tooltips"
+      titleDescription="The tooltip or infotip or a hint is a common graphical user interface element."
+    />
+
+    <WrapperSimple sectionHeading="Basic">
+      <TooltipsBasic />
+    </WrapperSimple>
+  </Fragment>;
+
+export default Tooltips;

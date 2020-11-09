@@ -11,46 +11,46 @@ import ButtonsColors from '../../../components/example-components/Buttons/Button
 import ButtonsLinks from '../../../components/example-components/Buttons/ButtonsLinks';
 import ButtonsOutline from '../../../components/example-components/Buttons/ButtonsOutline';
 import ButtonsSizing from '../../../components/example-components/Buttons/ButtonsSizing';
-export default function Buttons() {
-  return (
-    <Fragment>
-      <PageTitle
-        titleHeading="Buttons"
-        // eslint-disable-next-line max-len
-        titleDescription="Wide selection of buttons that feature different styles for backgrounds, borders and hover options!"
-      />
 
-      <Row>
-        <Col xl="6">
-          <WrapperSimple sectionHeading="Basic">
-            <ButtonsBasic />
+const Buttons = () =>
+  <Fragment>
+    <PageTitle
+      titleHeading="Buttons"
+      // eslint-disable-next-line max-len
+      titleDescription="Wide selection of buttons that feature different styles for backgrounds, borders and hover options!"
+    />
+
+    <Row>
+      <Col xl="6">
+        <WrapperSimple sectionHeading="Basic">
+          <ButtonsBasic />
+          <div className="divider my-2" />
+          <ButtonsSizing />
+        </WrapperSimple>
+      </Col>
+      <Col xl="6">
+        <WrapperSimple sectionHeading="Button groups">
+          <div className="text-center">
+            <ButtonsGroups />
             <div className="divider my-2" />
-            <ButtonsSizing />
-          </WrapperSimple>
-        </Col>
-        <Col xl="6">
-          <WrapperSimple sectionHeading="Button groups">
-            <div className="text-center">
-              <ButtonsGroups />
-              <div className="divider my-2" />
-              <ButtonsGroupsSizing />
-            </div>
-          </WrapperSimple>
-        </Col>
-        <Col xl="12">
-          <WrapperSimple sectionHeading="Colors">
-            <ButtonsColors />
-          </WrapperSimple>
-        </Col>
-      </Row>
+            <ButtonsGroupsSizing />
+          </div>
+        </WrapperSimple>
+      </Col>
+      <Col xl="12">
+        <WrapperSimple sectionHeading="Colors">
+          <ButtonsColors />
+        </WrapperSimple>
+      </Col>
+    </Row>
 
-      <WrapperSimple sectionHeading="Links">
-        <ButtonsLinks />
-      </WrapperSimple>
+    <WrapperSimple sectionHeading="Links">
+      <ButtonsLinks />
+    </WrapperSimple>
 
-      <WrapperSimple sectionHeading="Outline">
-        <ButtonsOutline />
-      </WrapperSimple>
-    </Fragment>
-  );
-}
+    <WrapperSimple sectionHeading="Outline">
+      <ButtonsOutline />
+    </WrapperSimple>
+  </Fragment>;
+
+export default Buttons;
