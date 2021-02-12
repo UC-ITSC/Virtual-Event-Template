@@ -66,9 +66,9 @@ Through all of these tasks, ensure the site you are building is accessible to pe
         * [Creating an Issue](https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue)
         * [Adding Issues to a Project Board](https://docs.github.com/en/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar)
 4. Install NodeJS 12.x on your computer
-      * [MacOS Installer for 12.19.1](https://nodejs.org/download/release/latest-v12.x/node-v12.19.1.pkg)
-      * [Windows x64 Installer for 12.19.1](https://nodejs.org/download/release/latest-v12.x/node-v12.19.1-x64.msi)
-      * [Windows x86 Installer for 12.19.1](https://nodejs.org/download/release/latest-v12.x/node-v12.19.1-x86.msi)
+      * [MacOS Installer for 12.20.2](https://nodejs.org/download/release/latest-v12.x/node-v12.20.2.pkg)
+      * [Windows x64 Installer for 12.20.2](https://nodejs.org/download/release/latest-v12.x/node-v12.20.2-x64.msi)
+      * [Windows x86 Installer for 12.20.2](https://nodejs.org/download/release/latest-v12.x/node-v12.20.2-x86.msi)
       * [Latest 12.x for all platforms](https://nodejs.org/download/release/latest-v12.x/)
 5. Install [VS Code](https://code.visualstudio.com/) your computer
 6. Clone the project from GitHub
