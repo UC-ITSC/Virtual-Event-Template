@@ -23,7 +23,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@reach/router": "^1.2.1",
-    "apexcharts": "^3.22.0",
+    "apexcharts": "^3.25.0",
     "clsx": "^1.1.1",
     "framer-motion": "^2.7.9",
     "google-map-react": "^2.1.7",
