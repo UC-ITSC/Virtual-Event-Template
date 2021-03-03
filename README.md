@@ -65,7 +65,7 @@ Through all of these tasks, ensure the site you are building is accessible to pe
     * Resources:
         * [Creating an Issue](https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue)
         * [Adding Issues to a Project Board](https://docs.github.com/en/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar)
-4. Install NodeJS 12.x on your computer
+4. Install NodeJS 12.x on your computer (Do NOT install Node 14 or the project will not run)
       * [MacOS Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0.pkg)
       * [Windows x64 Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0-x64.msi)
       * [Windows x86 Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0-x86.msi)
