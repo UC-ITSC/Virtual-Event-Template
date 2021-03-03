@@ -70,13 +70,14 @@ Through all of these tasks, ensure the site you are building is accessible to pe
       * [Windows x64 Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0-x64.msi)
       * [Windows x86 Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0-x86.msi)
       * [Latest 12.x for all platforms](https://nodejs.org/download/release/latest-v12.x/)
-5. Install [VS Code](https://code.visualstudio.com/) your computer
-6. Clone the project from GitHub
+5. Install [Git](https://git-scm.com/downloads) on your computer
+6. Install [VS Code](https://code.visualstudio.com/) your computer
+7. Clone the project from GitHub
       * See the resources belong on using Git
-7. Install the project
+8. Install the project
       * In VS Code, open a terminal window from the top (if one is not already open)
       * Run the command `npm install`
-8. Start the project
+9. Start the project
       * In VS Code, open a terminal window from the top (if one is not already open)
       * Run the command `npm start`
 
