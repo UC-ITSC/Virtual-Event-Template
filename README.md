@@ -67,8 +67,10 @@ Through all of these tasks, ensure the site you are building is accessible to pe
         * [Adding Issues to a Project Board](https://docs.github.com/en/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board#adding-issues-and-pull-requests-to-a-project-board-from-the-sidebar)
 4. Install NodeJS 12.x on your computer (Do NOT install Node 14 or the project will not run)
       * [MacOS Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0.pkg)
-      * [Windows x64 Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0-x64.msi)
-      * [Windows x86 Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0-x86.msi)
+      * Windows
+        * When installing windows, please make sure to check the "Automatically install the necessary tools" box at the end ![NodeJS Setup Screenshot with "Automatically install the necessary tools" box checked](./docs/install-windows-tools.png)
+        * [Windows x64 Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0-x64.msi)
+        * [Windows x86 Installer for 12.21.0](https://nodejs.org/download/release/latest-v12.x/node-v12.21.0-x86.msi)
       * [Latest 12.x for all platforms](https://nodejs.org/download/release/latest-v12.x/)
 5. Install [Git](https://git-scm.com/downloads) on your computer
 6. Install [VS Code](https://code.visualstudio.com/) your computer
