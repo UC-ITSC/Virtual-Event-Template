@@ -21,6 +21,7 @@
     - [ ] For each project type, display each project by the name of the person working on it. Find a way to make this look better than just a list of links.
 
     You do not need to get the actual information about each project and who is working on it. Just make some fake names of people.
+    An example of this page is the [IT EXPO 20 Seniors Page](https://itexpo20.live/seniors)
     ```
 
 3. Create a template page to showcase each project
@@ -37,6 +38,7 @@
 
     You do not need to get the actual information about each project and who is working on it. Just make a fake description and some fake names of people.
     I like to use [https://loremipsum.io/](https://loremipsum.io/) for example text.
+    An example of this page is [IT EXPO 20 Senior Detail Page](https://itexpo20.live/seniors/11)
     ```
 
 4. Publish the site to Netlify
